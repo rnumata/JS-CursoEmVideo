@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,5 +8,15 @@
 </head>
 <body>
   <h1>Curso de Javascript</h1>
+
+  <script>
+    let nome = prompt("Digite o nome: ");
+    alert(`Aluno: ${nome}`);
+    let sal = Number(prompt("Digite o salário: "));
+    alert(sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}));
+    // 5 == '5' true.. analisa grandeza
+    // 5 === '5'  false.. analisa se identicos.. se mesmo valor e mesmo tipo
+    // Ordem de precedencia:  () ** / *, ><>=<=, !, && , ||
+  </script>
 </body>
 </html>
