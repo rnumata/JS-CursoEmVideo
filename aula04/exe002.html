@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso em video</title>
+</head>
+<body>
+  <h1 id="texto">Curso de Javascript</h1>
+  <p>aprendendo o DOM</p>
+  <p>Lorem ipsum</p>
+  <div id="divs">
+    
+  </div>
+
+  <script>
+    let nome = prompt('Digite o nome: ');
+    let divis = document.querySelector('div#divs');
+    divis.innerHTML = `O Nome do aluno é: ${nome}`;
+
+    let valor = document.getElementsByTagName('p')[0];
+    document.writeln(valor.innerText);
+
+    let agaUm = document.getElementById('texto');
+    document.writeln(agaUm.innerText);
+  </script>  
+</body>
+</html>
